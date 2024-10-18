@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, sans-serif;
+}
+a{
+    color: #fff;
+    text-decoration: none
+}
+#top{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
+    /*background: #23232e;*/
+    background-color: #3c5c3d;
+    height: 10vh;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+}
+.nav-list {
+    list-style: none;
+    display: flex;
+}
+.content{
+    list-style: none;
+}
+
+.nav-list li {
+    letter-spacing: 0.3vh;
+    margin-left: 3.2vh;
+}
+body{
+    background-color: #fff;
+}
+#conteudo{
+    border-radius: 2vh;
+    border: 0.2vh solid black;
+    margin-right: 15.5vh;
+    margin-left: 15.5vh;
+    padding: 0.3vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #f7f7f7;
+    margin-top: 5rem;
+    
+}
+.menu button{
+    background-color: hsl(0, 0%, 80%);
+    color: rgb(0, 0, 0);
+    padding: 1vh 1.5vh;
+    border: none;
+    cursor: pointer;
+    border-radius: 	0.5vh;
+}
+.menu a{
+    display: block;
+    color: black;
+    text-decoration: none;
+    padding: 1vh 1.5vh;
+}
+.menu .content{
+    display: none;
+    position: fixed;
+    background-color: hsl(0, 0%, 95%);
+    min-width: 10vh;
+    box-shadow: 0.2vh 0.2vh 0.5vh hsla(0, 0%, 0%, 0.8);
+}
+.menu:hover .content{
+    display: block;
+}
+.menu:hover button{
+    background-color: hsl(0, 0%, 70%);
+}
+.menu a:hover{
+    background-color: hsl(0, 0%, 90%);
+}
+#conteudo p{
+    margin: 3vh;
+    font-size: 1.2rem;
+}
+#conteudo h1{
+    font-size: 5vh;
+    text-align: center;
+    color:#3c5c3d;
+}
+.titulo{
+    font-weight: bolder;
+    margin: 1rem;
+}
+#conteudo .subtitulo {
+    font-size: 4.0;
+    text-align: center;
+}
+
+#conteudo ul{
+    margin: 3vh;
+}
+#conteudo li{
+    margin: 0.8rem;
+    font-size: 1.2rem;
+}
+#tituloTopo{
+    color: #fff;
+    font-size: 3vh;
+    
+}
+#tituloTopo{
+    font-family: "Noto Serif", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:"wdth" 100;
+    font-size: 100%;
+    width: 55%;
+}
+@media only screen and (max-width: 600px){
+    #conteudo{
+        width: 100%;
+        margin: 0 0;
+        padding-top:10vh ;
+    }
+    .menu .content{
+        display: none;
+        position: fixed;
+        background-color: hsl(0, 0%, 95%);
+        min-width: 10vh;
+        box-shadow: 0.2vh 0.2vh 0.5vh hsla(0, 0%, 0%, 0.8);
+        top: 0px;
+        left: 0px;
+        width: 100%;
+    }
+}
+@media only screen and (min-width: 601px) and (max-width: 1024px){
+    #conteudo{
+        width: 100%;
+        margin: 0 0;
+        padding-top:10vh ;
+    }
+    .menu .content{
+        display: none;
+        position: fixed;
+        background-color: hsl(0, 0%, 95%);
+        min-width: 10vh;
+        box-shadow: 0.2vh 0.2vh 0.5vh hsla(0, 0%, 0%, 0.8);
+        top: 0px;
+        left: 0px;
+        width: 100%;
+    }
+}
